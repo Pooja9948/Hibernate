@@ -15,8 +15,7 @@ public class StudentInsert {
 		cfg.configure("hibernate.cfg.xml");
 		SessionFactory sf=cfg.buildSessionFactory();
 		Session s=sf.openSession();
-		s.beginTransaction();
-		s.save(se);
+		 
 		//student object state is persistent
 		s.getTransaction().commit();
 		//student object will move databasde
